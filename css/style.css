@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #f8f7f4;
+    padding-top: 50px;
+    background: #292a2e;
+    /* Fundo padrão */
+    background-image: url(../img/Fudo2.jpg);
+    /* Fundo com imagem */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.side-by-side {
+    display: inline-block;
+    width: 22%;
+    /* Ajuste o tamanho conforme necessário */
+    margin-right: 1%;
+    /* Espaço entre as imagens */
+    vertical-align: top;
+    /* Alinha as imagens no topo */
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f1f8f1;
+    /* Cor da fonte */
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    /* Tamanho da fonte */
+    margin-right: 25px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+td,
+th {
+    padding: .7em;
+    margin: 0;
+    border: 1px solid #fffefe;
+    text-align: center;
+}
+
+/* cor de fundo do cabeçalho da tabela*/
+th {
+    background-color: #000000;
+}
+
+/* Fonte e cor de fundo das células do corpo da tabela*/
+td {
+    font-weight: bold;
+    background-color: #25ced1;
+    padding: 7px;
+}
+
+.tab {
+    width: 100%;
+    margin-bottom: .5em;
+    table-layout: fixed;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.menu {
+    background-color: #292a2e;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    margin-left: 30px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 599px) {
+    .menu {
+        visibility: hidden;
+    }
+}
+
+main {
+    padding: 20px;
+    margin-top: 90px;
+    /* Ajustado para compensar a barra fixa */
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #292a2e;
+    /* Fundo do rodapé */
+    color: #edeff6;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
